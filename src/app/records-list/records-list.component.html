@@ -1,0 +1,11 @@
+<mat-card>
+    <h2>RECORDS:</h2>
+    <mat-list>
+         <mat-list-item *ngFor="let entry of recordList; let i = index"> 
+            {{ i + 1 }}. <b>Username:</b>&nbsp;{{ entry.username }} &nbsp;&nbsp;&nbsp; <b>time spent:</b>&nbsp;{{ entry.time }}&nbsp;hrs &nbsp;&nbsp;&nbsp; <b>Date:</b>&nbsp;{{ entry.date }} &nbsp;&nbsp;&nbsp; <b>mood:</b>&nbsp;{{ entry.mood }}
+            
+        </mat-list-item>
+    </mat-list>
+   
+</mat-card>
+
